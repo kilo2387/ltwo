@@ -20,6 +20,7 @@ class ComposerStaticInitcb448a63f3445893080dfb1ec5cdb2b7
             'yii\\swiftmailer\\' => 16,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
+            'yii\\elasticsearch\\' => 18,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
@@ -86,6 +87,10 @@ class ComposerStaticInitcb448a63f3445893080dfb1ec5cdb2b7
         'yii\\faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-faker',
+        ),
+        'yii\\elasticsearch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-elasticsearch',
         ),
         'yii\\debug\\' => 
         array (

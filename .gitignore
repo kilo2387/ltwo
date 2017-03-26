@@ -36,6 +36,10 @@ phpunit.phar
 
 # runtime
 /backend/runtime
+/backend/runtime/
 /frontend/runtime
+/frontend/runtime/
 /backend/web/assets
+/backend/web/assets/
 /frontend/web/assets
+/frontend/web/assets/

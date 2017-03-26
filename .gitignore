@@ -36,7 +36,7 @@ phpunit.phar
 
 # runtime
 /backend/runtime
-/backend/runtime/
+/backend/runtime/debug
 /frontend/runtime
 /frontend/runtime/
 /backend/web/assets

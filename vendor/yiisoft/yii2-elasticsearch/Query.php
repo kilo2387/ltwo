@@ -393,7 +393,7 @@ class Query extends Component implements QueryInterface
 
         $options = [];
         $options['size'] = 0;
-print_r($this);
+
         return $this->createCommand($db)->search($options)['hits']['total'];
     }
 

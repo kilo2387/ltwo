@@ -23,7 +23,9 @@ class EstestController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['index', 'read', 'go', 'select-one', 'select-all', 'count', 'up' ,'se'],
+                        'actions' => ['index', 'read', 'go', 'select-one',
+                            'select-all', 'count', 'up' ,'se', 'insert', 'create-type'
+                        ],
                         'allow' => true,
                     ],
                     [
@@ -65,7 +67,6 @@ class EstestController extends Controller
             die('已有记录，不能添加操作!');
         }
         $data['primaryKey'] = $data['id'];
-        unset($data['id']);
         $ret = ESearch::createOne($data['primaryKey'],$data);
         print_r($ret);die();
     }
@@ -79,7 +80,6 @@ class EstestController extends Controller
         if(empty($obj)){
             die('没有记录，无法更新操作!');
         }
-        unset($data['id']);
         $ret = ESearch::updateRecord($obj['primaryKey'],$data);
         print_r($ret);die();
     }
@@ -100,16 +100,16 @@ class EstestController extends Controller
      */
     public function actionGo(){
         $options = [
-            'id'=>7,
-            'name' => 'dfgeeee&',
+            'id'=>1,
+            'name' => 'hahahaha&',
             'address' => 'haohoaod',
-            'registration_date' => time()
+            'update_datetime' => time()
         ];
 
         //更新
-//        $this->updateOne($options);
+        $this->updateOne($options);
         //添加
-        $this->createOne($options);
+//        $this->createOne($options);
         //删除
 //        $this->deleteOne($options['id']);
         die('没有操作');
@@ -120,7 +120,12 @@ class EstestController extends Controller
      * @param $id
      */
     public function actionSelectOne($id){
-        $ret = ArrayHelper::toArray(ESearch::findOne($id));
+//        $ret = ArrayHelper::toArray(ESearch::findOne($id));
+        $ret = ESearch::findOne($id);
+//        foreach ($ret as $value){
+//            print_r($value);
+//        }
+        print_r($ret->getScore());
         if(empty($ret)){
             die('没有记录!');
         }
@@ -128,7 +133,8 @@ class EstestController extends Controller
     }
 
     public function actionSelectAll(){
-        $ret = ArrayHelper::toArray(ESearch::find()->all());
+        $ret = ArrayHelper::toArray(ESearch::find()->all()
+        );
         if(empty($ret)){
             die('没有记录!');
         }
@@ -147,10 +153,9 @@ class EstestController extends Controller
      *
      */
     public function actionCount(){
-//        $s = escape ("mm&");
-        $ret = ESearch::find()->where(['name' => 'mm-m'])->count();
+//        $ret = ESearch::find()->where(['name' => ['like','hahahah']])->count();
 //        {"size":10,"query":{"constant_score":{"filter":{"bool":{"must":[{"term":{"name":"mm-m"}}]}}}}}
-        $ret = ESearch::find()->query(["match" => ["name" => "mm-m"]])->count();
+        $ret = ESearch::find()->query(["match" => ["name" => "hahahaha"]])->count();
 //        {"size":10,"query":{"match":{"name":"mm-m"}}}
 //        if(!$ret){
 //            die('没有记录!');
@@ -171,7 +176,7 @@ class EstestController extends Controller
     }
     public function actionUp(){
         $url = 'http://127.0.0.1:9200/catalog/user/7/_update'; //?op_type=create
-        $ret = '{"doc":{"name":"mmm","address":"mmmmmmmmmmm","registration_date":1490555261}}';
+        $ret = '{"doc":{"id":"4","name":"mmm","address":"mmmmmmmmmmm","update_datetime":1490555261}}';
 //        {"doc":{"registration_date":1490558613}}
 //        $ret = json_decode($ret, true);
 
@@ -191,7 +196,7 @@ class EstestController extends Controller
     public function actionSe(){
         $ret = '{"size":10,"query":{"constant_score":{"filter":{"false":{"must":[{"term":{"name":"mm-m"}}]}}}}}';
         $url = 'http://127.0.0.1:9200/catalog/user/_search?size=0';
-        $ret = http_request(1,$ret);
+//        $ret = http_request(1,$ret);
         print_r($ret);die();
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -200,6 +205,18 @@ class EstestController extends Controller
         $output = curl_exec($ch);
         var_dump(curl_error($ch));
 
+        curl_close($ch);
+    }
+
+    public function actionCreateType(){
+//        $ret =  '{"title": "My first blog entry","text":  "Just trying this out..."}';
+        $url = 'http://127.0.0.1:9200/catalog/book';
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt ($ch, CURLOPT_POST, 1 ); //设置post
+//        curl_setopt ($ch, CURLOPT_POSTFIELDS, $ret);
+        $output = curl_exec($ch);
+        var_dump(curl_error($ch));
         curl_close($ch);
     }
 }

@@ -24,7 +24,9 @@ class ESearch extends ActiveRecord{
     public function attributes()
     {
 
-        return ['name', 'address', 'registration_date'];
+//        $ret = ESearch::getScore();
+//        var_dump($ret);die();
+        return ['id', 'name', 'address', 'update_datetime'];
 
     }
 

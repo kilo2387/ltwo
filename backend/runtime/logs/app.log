@@ -1,0 +1,1683 @@
+2017-03-27 05:12:47 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in E:\home\www\ltwo\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-03-27 05:12:47 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][info][application] $_GET = [
+    's' => 'estest/select-one'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49704'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490591566.984
+    'REQUEST_TIME' => 1490591566
+]
+2017-03-27 05:13:22 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in E:\home\www\ltwo\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-03-27 05:13:22 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][info][application] $_GET = [
+    's' => 'estest/select-one'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49704'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490591602.343
+    'REQUEST_TIME' => 1490591602
+]
+2017-03-27 05:19:21 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in E:\home\www\ltwo\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-03-27 05:19:21 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][info][application] $_GET = [
+    's' => 'estest/select-one'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50276'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490591961.414
+    'REQUEST_TIME' => 1490591961
+]
+2017-03-27 06:11:27 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in E:\home\www\ltwo\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-03-27 06:11:27 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][info][application] $_GET = [
+    's' => 'estest/select-one'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54901'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490595087.237
+    'REQUEST_TIME' => 1490595087
+]
+2017-03-27 06:19:41 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_flip() expects parameter 1 to be array, null given' in E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1129
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'array_flip() ex...', 'E:\\home\\www\\ltw...', 1129, Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1129): array_flip(NULL)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2-elasticsearch\ActiveRecord.php(344): yii\db\BaseActiveRecord::populateRecord(Object(backend\models\ESearch), Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2-elasticsearch\ActiveRecord.php(128): yii\elasticsearch\ActiveRecord::populateRecord(Object(backend\models\ESearch), Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2-elasticsearch\ActiveRecord.php(92): yii\elasticsearch\ActiveRecord::get('6')
+#5 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\elasticsearch\ActiveRecord::findOne('6')
+#6 [internal function]: backend\controllers\EstestController->actionSelectOne('6')
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#10 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#11 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-03-27 06:19:41 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55683'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=6'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=6'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490595581.133
+    'REQUEST_TIME' => 1490595581
+]
+2017-03-27 06:19:43 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_flip() expects parameter 1 to be array, null given' in E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1129
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'array_flip() ex...', 'E:\\home\\www\\ltw...', 1129, Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1129): array_flip(NULL)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2-elasticsearch\ActiveRecord.php(344): yii\db\BaseActiveRecord::populateRecord(Object(backend\models\ESearch), Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2-elasticsearch\ActiveRecord.php(128): yii\elasticsearch\ActiveRecord::populateRecord(Object(backend\models\ESearch), Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2-elasticsearch\ActiveRecord.php(92): yii\elasticsearch\ActiveRecord::get('6')
+#5 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\elasticsearch\ActiveRecord::findOne('6')
+#6 [internal function]: backend\controllers\EstestController->actionSelectOne('6')
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#10 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#11 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-03-27 06:19:43 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55683'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=6'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=6'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490595583.392
+    'REQUEST_TIME' => 1490595583
+]
+2017-03-27 06:32:24 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: estest/Count' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('Count', Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/Count', Array)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-27 06:32:24 [127.0.0.1][-][kleak195sleu7uie3t6arl0jf1][info][application] $_GET = [
+    's' => 'estest/Count'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4fdbsauhkk2s53c8iop2lelkl0'
+    'advanced-backend' => 'kleak195sleu7uie3t6arl0jf1'
+    'think_template' => 'web'
+    '_csrf-backend' => '6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'PHPSESSID=4fdbsauhkk2s53c8iop2lelkl0; advanced-backend=kleak195sleu7uie3t6arl0jf1; think_template=web; _csrf-backend=6af8c09ec51f6ccc75afeb42e402e9c52eaa6be4df2737756f19f0212abdb305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22IHvlWJsh2gznVl3dIqjTsEaSlQUEN3Hd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57166'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/Count'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/Count'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490596344.367
+    'REQUEST_TIME' => 1490596344
+]
+2017-03-27 09:01:48 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ESearch::version' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('version')
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\db\BaseActiveRecord->__get('version')
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:01:48 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50071'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605308.033
+    'REQUEST_TIME' => 1490605308
+]
+2017-03-27 09:01:57 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ESearch::_version' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('_version')
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\db\BaseActiveRecord->__get('_version')
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:01:57 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50071'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605317.809
+    'REQUEST_TIME' => 1490605317
+]
+2017-03-27 09:01:58 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ESearch::_version' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('_version')
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\db\BaseActiveRecord->__get('_version')
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:01:58 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50071'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605318.754
+    'REQUEST_TIME' => 1490605318
+]
+2017-03-27 09:01:59 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ESearch::_version' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('_version')
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\db\BaseActiveRecord->__get('_version')
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:01:58 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50088'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605318.949
+    'REQUEST_TIME' => 1490605318
+]
+2017-03-27 09:01:59 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ESearch::_version' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('_version')
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\db\BaseActiveRecord->__get('_version')
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:01:59 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50094'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605319.137
+    'REQUEST_TIME' => 1490605319
+]
+2017-03-27 09:03:40 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ESearch::v' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('v')
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(123): yii\db\BaseActiveRecord->__get('v')
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:03:40 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50145'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605420.771
+    'REQUEST_TIME' => 1490605420
+]
+2017-03-27 09:12:55 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\models\ESearch::getVersion()' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 E:\home\www\ltwo\backend\controllers\EstestController.php(126): yii\base\Component->__call('getVersion', Array)
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(126): backend\models\ESearch->getVersion()
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:12:54 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50538'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605974.966
+    'REQUEST_TIME' => 1490605974
+]
+2017-03-27 09:13:04 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\models\ESearch::getVersion()' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 E:\home\www\ltwo\backend\controllers\EstestController.php(126): yii\base\Component->__call('getVersion', Array)
+#1 E:\home\www\ltwo\backend\controllers\EstestController.php(126): backend\models\ESearch->getVersion()
+#2 [internal function]: backend\controllers\EstestController->actionSelectOne('1')
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('select-one', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/select-o...', Array)
+#7 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-03-27 09:13:04 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/select-one'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50545'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/select-one?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/select-one&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490605984.344
+    'REQUEST_TIME' => 1490605984
+]
+2017-03-27 09:38:28 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: ret' in E:\home\www\ltwo\backend\controllers\EstestController.php:215
+Stack trace:
+#0 E:\home\www\ltwo\backend\controllers\EstestController.php(215): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\home\\www\\ltw...', 215, Array)
+#1 [internal function]: backend\controllers\EstestController->actionInsert()
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('insert', Array)
+#5 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/insert', Array)
+#6 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-03-27 09:38:28 [127.0.0.1][-][-][info][application] $_GET = [
+    's' => 'estest/insert'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51061'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/insert'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/insert'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490607508.299
+    'REQUEST_TIME' => 1490607508
+]
+2017-03-27 09:41:13 [127.0.0.1][-][q24njajtreoh5jigs6qdlssj62][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: estest/insert' in E:\home\www\ltwo\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Controller->runAction('insert', Array)
+#1 E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('estest/insert', Array)
+#2 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\home\www\ltwo\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\home\www\ltwo\vendor\yiisoft\yii2\base\Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\home\www\ltwo\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-27 09:41:13 [127.0.0.1][-][q24njajtreoh5jigs6qdlssj62][info][application] $_GET = [
+    's' => 'estest/insert'
+]
+
+$_COOKIE = [
+    'think_template' => 'web'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SEELE\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SEELE-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SEELE'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_112'
+    'LOCALAPPDATA' => 'C:\\Users\\SEELE\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SEELE-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => '%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\tools\\Git\\cmd;E:\\home\\mysql\\bin;E:\\tools\\TortoiseGit\\bin;E:\\home\\php56;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\SEELE\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SEELE\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SEELE-PC'
+    'USERNAME' => 'SEELE'
+    'USERPROFILE' => 'C:\\Users\\SEELE'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'think_template=web'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8006'
+    'SCRIPT_FILENAME' => 'E:/home/www/ltwo/backend/web/index.php'
+    'PATH_TRANSLATED' => 'E:/home/www/ltwo/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8006'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51096'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/home/www/ltwo/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/estest/insert'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=estest/insert'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490607673.347
+    'REQUEST_TIME' => 1490607673
+]

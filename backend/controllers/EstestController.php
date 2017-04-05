@@ -24,7 +24,7 @@ class EstestController extends Controller
                 'rules' => [
                     [
                         'actions' => ['index', 'read', 'go', 'select-one',
-                            'select-all', 'count', 'up' ,'se', 'insert', 'create-type'
+                            'select-all', 'count', 'up' ,'se', 'insert', 'create-type', 'get-url'
                         ],
                         'allow' => true,
                     ],
@@ -100,9 +100,9 @@ class EstestController extends Controller
      */
     public function actionGo(){
         $options = [
-            'id'=>1,
-            'name' => 'hahahaha&',
-            'address' => 'haohoaod',
+            'id'=>3,
+            'name' => 'gfer',
+            'address' => 'nnnnnnn',
             'update_datetime' => time()
         ];
 
@@ -216,6 +216,30 @@ class EstestController extends Controller
         curl_setopt ($ch, CURLOPT_POST, 1 ); //设置post
 //        curl_setopt ($ch, CURLOPT_POSTFIELDS, $ret);
         $output = curl_exec($ch);
+        var_dump(curl_error($ch));
+        curl_close($ch);
+    }
+
+    public function actionGetUrl(){
+        $url = 'http://localhost:9200/_all/user/_search?q=user:nnnn';
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+//        curl_setopt ($ch, CURLOPT_POST, 1 ); //设置post
+//        curl_setopt ($ch, CURLOPT_POSTFIELDS, $ret);
+        $output = curl_exec($ch);
+        var_dump(curl_error($ch));
+        curl_close($ch);
+    }
+
+    public function actionGetmohu(){
+//        POST /index/fulltext/_search
+        $ret = '{"query" : { "term" : { "content" : "中国" }}, "highlight" : {"pre_tags" : ["'.'<tag1>", "<tag2>"], "post_tags" : ["</tag1>", "</tag2>"], "fields" : {"content" : {} } } }';
+        $url = 'http://localhost:9200/_all/user/_search';
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt ($ch, CURLOPT_POST, 1 ); //设置post
+        curl_setopt ($ch, CURLOPT_POSTFIELDS, $ret);
+        curl_exec($ch);
         var_dump(curl_error($ch));
         curl_close($ch);
     }

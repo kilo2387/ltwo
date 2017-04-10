@@ -153,7 +153,7 @@ class EstestController extends Controller
      *
      */
     public function actionCount(){
-//        $ret = ESearch::find()->where(['name' => ['like','hahahah']])->count();
+//        $ret = ESearch::find();
 //        {"size":10,"query":{"constant_score":{"filter":{"bool":{"must":[{"term":{"name":"mm-m"}}]}}}}}
         $ret = ESearch::find()->query(["match" => ["name" => "hahahaha"]])->count();
 //        {"size":10,"query":{"match":{"name":"mm-m"}}}

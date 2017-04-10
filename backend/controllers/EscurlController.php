@@ -6,7 +6,10 @@
  * Time: 13:54
  */
 namespace backend\controllers;
+<<<<<<< HEAD
 use yii\helpers\Json;
+=======
+>>>>>>> 1659e18... dele
 use yii\web\Controller;
 use yii\filters\AccessControl;
 class EscurlController extends Controller{
@@ -16,8 +19,12 @@ class EscurlController extends Controller{
                 'class'=>AccessControl::className(),
                 'rules'=>[
                     [
+<<<<<<< HEAD
                         'actions'   =>  ['index', 'all', 'bulk', 'selectdata', 'newindex' , 'delindex', 'addalign',
                         'copydata', 'change-alias', 'newdata'],
+=======
+                        'actions'   =>  ['index', 'all'],
+>>>>>>> 1659e18... dele
                         'allow'     =>  true,
                     ],
                     [
@@ -43,6 +50,7 @@ class EscurlController extends Controller{
         curl_close($ch);
     }
 
+<<<<<<< HEAD
     /**
      * 批量添加
      * post
@@ -271,4 +279,6 @@ class EscurlController extends Controller{
 
     }
 
+=======
+>>>>>>> 1659e18... dele
 }

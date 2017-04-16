@@ -5,7 +5,8 @@ return [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=yiidb',
             'username' => 'root',
-            'password' => '',
+            'password' => 'jkljkl',//linux
+//            'password' => '',
             'charset' => 'utf8',
         ],
         'mailer' => [
@@ -21,6 +22,11 @@ return [
             'nodes' => [
                 ['http_address' => 'localhost:9200'], // configure more hosts if you have a cluster
             ],
+        ],
+
+        'mongodb' => [
+            'class' => 'yii\mongodb\Connection',
+            'dsn' => 'mongodb://localhost:27017/statis',
         ],
     ],
 ];

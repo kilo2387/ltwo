@@ -41,6 +41,10 @@ class MonController extends Controller
 //        ] );
 //        var_dump($res);
 //    }
+
+    /**
+     * 从mysql获取数据,批量添加到mongodb
+     */
     public function actionList()
     {
         $query = new Query();

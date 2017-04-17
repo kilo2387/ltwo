@@ -8,7 +8,9 @@
 
 namespace backend\models;
 
-use yii\mongodb\ActiveRecord;
-class Jobnumber extends ActiveRecord {
-
+use yii\db\ActiveRecord;
+class Team extends ActiveRecord {
+    public static function tableName(){
+        return 't_count_team';
+    }
 }

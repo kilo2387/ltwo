@@ -2,13 +2,16 @@
 namespace backend\controllers;
 
 use backend\models\Jobnumber;
+use backend\models\Team;
 use Yii;
 use Codeception\Module\MongoDb;
 use yii\data\ActiveDataProvider;
+use yii\db\ActiveQuery;
 use yii\db\Query;
 use yii\helpers\ArrayHelper;
 use yii\mongodb\Command;
 use yii\mongodb\Connection;
+use yii\mongodb\rbac\MongoDbManager;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 class MonController extends Controller
@@ -48,9 +51,14 @@ class MonController extends Controller
     public function actionList()
     {
         $HeaderTime = microtime();
-        $query = new Query();
-        $query->where("Fcreate_time >= '2017-04-01'")->select([])->from ('t_count_team' );
-        $rows = $query->all();
+        //pdo方式查找数据
+//        $query = new Query();
+//        $query->where("Fcreate_time >= '2017-04-01'")->from ('t_count_team' );
+//        $rows = $query->all();
+
+        //ActiveQuery查找数据
+        $rows = ArrayHelper::toArray(Team::find()->where("Fcreate_time >= '2017-04-01'")->all());
+//        var_dump($rows);
         // execute command:
 //        $result = Yii::$app->mongodb->createCommand(['listIndexes' => 'jobnumber'])->execute();
 //        // execute query (find):
@@ -167,12 +175,90 @@ class MonController extends Controller
         var_dump($rows);
 
     }
-    public function actionSum(){
+    public function actionSum1(){
+        $manager = new Connection(['dsn'=>'mongodb://localhost:27017/statis']);
+        $manager->open();
 
-        $query = new \yii\mongodb\Query();
-        $query->from('team')->sum('Forder_num');
-// execute the query
-        $rows = $query->all();
-        var_dump($rows);
+
+//        var_dump($dsn);die('my');
+        $add = new Command([
+            'db' => $manager,
+            'databaseName' => 'statis',
+            'document' => '',
+        ]);
+//        $command = new Command([
+//            'aggregate' => 'team',
+//            'pipeline' => [
+//                ['$group' => ['_id' => '$Fteam_id', 'sum' => ['$sum' => '$Forder_num']]],
+//            ],
+////            'cursor' => new stdClass,
+//        ]);
+        $plines = [
+            [
+                '$project' =>[
+                    '_id'=>0,
+                    'team_id'=>'$Fteam_id',
+                    'order_num' => '$Forder_num',
+                    'amount_price' => '$Famount_price',
+                    'create_time' => '$Fcreate_time' ,
+                ]
+            ],
+            [
+                '$match' => [
+                    '$create_time' => ['$gte' => '2017-04-15'],
+                ],
+            ],
+            [
+                '$group' => ['_id' => '$team_id', 'count' => ['$sum' =>'$order_num'], 'price' => ['$sum' =>'$amount_price']]
+            ],
+
+            [
+                '$sort' => ['count' => -1]
+            ]
+        ];
+        $option = [
+
+            'allowDiskUse' => true
+        ];
+        $ret = $add->aggregate('team',$plines, $option);
+//        $cursor = $manager->executeCommand('db', $command);
+        var_dump($ret);die();
+//        $command = new MongoDB\Driver\Command([
+//            'aggregate' => 'collection',
+//            'pipeline' => [
+//                ['$group' => ['_id' => '$y', 'sum' => ['$sum' => '$x']]],
+//            ],
+//            'cursor' => new stdClass,
+//        ]);
+//        $cursor = $manager->executeCommand('db', $command);
+    }
+
+    public function actionSum(){
+        $plines = [
+            [
+                '$project' =>[
+                    '_id'=>0,
+                    'team_id'=>'$Fteam_id',
+                    'order_num' => '$Forder_num',
+                    'amount_price' => '$Famount_price',
+                    'create_time' => '$Fcreate_time' ,
+                ]
+            ],
+            [
+                '$match' => [
+                    'create_time' => ['$gte' => '2017-04-16'],
+                ],
+            ],
+            [
+                '$group' => ['_id' => '$team_id', 'count' => ['$sum' =>'$order_num'], 'price' => ['$sum' =>'$amount_price']]
+            ],
+
+            [
+                '$sort' => ['count' => -1]
+            ]
+        ];
+        $ret = Yii::$app->mongodb->createCommand()->aggregate('team',$plines);
+        var_dump($ret);die();
+
     }
 }

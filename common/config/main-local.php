@@ -3,10 +3,11 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yiidb',
+            //'dsn' => 'mysql:host=localhost;dbname=yiidb',
+            'dsn' => 'mysql:host=localhost;dbname=hsb_statis',
             'username' => 'root',
-            'password' => 'jkljkl',//linux
-//            'password' => '',
+//            'password' => 'jkljkl',//linux
+            'password' => '',
             'charset' => 'utf8',
         ],
         'mailer' => [

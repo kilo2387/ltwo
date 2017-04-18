@@ -7,6 +7,7 @@ use Yii;
 use Codeception\Module\MongoDb;
 use yii\data\ActiveDataProvider;
 use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 use yii\db\Query;
 use yii\helpers\ArrayHelper;
 use yii\mongodb\Command;
@@ -22,7 +23,7 @@ class MonController extends Controller
                 'class'=>AccessControl::className(),
                 'rules'=>[
                     [
-                        'actions'   =>  ['find', 'list', 'group', 'sum'],
+                        'actions'   =>  ['find', 'list', 'count', 'sum'],
                         'allow'     =>  true,
                     ],
                     [
@@ -50,7 +51,6 @@ class MonController extends Controller
      */
     public function actionList()
     {
-        $HeaderTime = microtime();
         //pdo方式查找数据
 //        $query = new Query();
 //        $query->where("Fcreate_time >= '2017-04-01'")->from ('t_count_team' );
@@ -58,33 +58,16 @@ class MonController extends Controller
 
         //ActiveQuery查找数据
         $rows = ArrayHelper::toArray(Team::find()->where("Fcreate_time >= '2017-04-01'")->all());
-//        var_dump($rows);
-        // execute command:
-//        $result = Yii::$app->mongodb->createCommand(['listIndexes' => 'jobnumber'])->execute();
-//        // execute query (find):
-//        $cursor =Yii::$app->mongodb->createCommand(['projection' => ['title' => true]])->query('jobnumber');
-
-//        printf(" total run: %.2f s<br>".
-//            "memory usage: %.2f M<br> ",
-//            microtime(true)-$HeaderTime,
-//            memory_get_usage() / 1024 / 1024 );
-//        die();
 
         // execute batch (bulk) operations:
         $dsn = new Connection(['dsn'=>'mongodb://localhost:27017/statis']);
-
-//        var_dump($dsn);die('my');
         $add = new Command([
             'db' => $dsn,
             'databaseName' => 'statis',
             'document' => '',
         ]);
-//        var_dump($add);
-//        echo '<br>';
         $add->batchInsert('team',$rows);
-//        var_dump($add);die();
-       die();
-        Yii::$app->mongodb->createCommand()->batchInsert('jobnumber',$rows);
+        //Yii::$app->mongodb->createCommand()->batchInsert('jobnumber',$rows);
 
 //        Yii::$app->mongodb->createCommand()
 //            ->addInsert(['name' => 'new'])
@@ -93,17 +76,6 @@ class MonController extends Controller
 //            ->executeBatch('customer');
 
     }
-//    public function actionView()
-//    {
-//        $query = new Query ();
-//        $row = $query->from ( 'jobnumber' )->one ();
-//        echo Url::toRoute ( [
-//            'item/update',
-//            'id' => ( string ) $row ['_id']
-//        ] );
-//        var_dump ( $row ['_id'] );
-//        var_dump ( ( string ) $row ['_id'] );
-//    }
     public function actionFind()
     {
         $provider = new ActiveDataProvider ( [
@@ -131,68 +103,18 @@ class MonController extends Controller
 //        $models = $provider->getModels ();
 //        var_dump ( $models );
 //    }
-    public function actionGroup(){
+    public function actionCount(){
         $HeaderTime = microtime(true);
-//        echo $HeaderTime;die();
         echo Yii::$app->mongodb->createCommand()->count('team');
-        $cursor = Yii::$app->mongodb->createCommand(['Forder_num' => 1,
-                    'Fcreate_time' => 1 ])->aggregate('team', [
-//            [
-//                '$project' =>[
-//                    'Forder_num' => 1,
-//                    'Fcreate_time' => 1 ,
-//                ]
-//            ],
-            [
-                '$match' => [
-                    'Fcreate_time' => ['$gte' => '2017-04-01'],
-                ],
-            ],
-            [
-                '$group' => [
-                    '_id' => '$Fteam_id',
-                    'Forder_num' => [
-                        '$sum' => 'Forder_num'
-                    ],
-                ]
-            ],
-        ]);
-//        printf(" total run: %.2f s<br>".
-//            "memory usage: %.2f M<br> ",
-//            microtime(true)-$HeaderTime,
-//            memory_get_usage() / 1024 / 1024 );
-//        die();
-        var_dump($cursor);
-//        $HeaderTime = microtime(true);
-//        $query = new Query();
-//        $query->where("Fcreate_time >= '2017-04-14'")->select([])->from ('t_count_jobnumber' )->groupBy('Fjob_number');
-//        $rows = $query->all();
-//        printf(" total run: %.2f s<br>".
-//            "memory usage: %.2f M<br> ",
-//            microtime(true)-$HeaderTime,
-//            memory_get_usage() / 1024 / 1024 );
-        die();
-        var_dump($rows);
-
     }
     public function actionSum1(){
         $manager = new Connection(['dsn'=>'mongodb://localhost:27017/statis']);
         $manager->open();
-
-
-//        var_dump($dsn);die('my');
         $add = new Command([
             'db' => $manager,
             'databaseName' => 'statis',
             'document' => '',
         ]);
-//        $command = new Command([
-//            'aggregate' => 'team',
-//            'pipeline' => [
-//                ['$group' => ['_id' => '$Fteam_id', 'sum' => ['$sum' => '$Forder_num']]],
-//            ],
-////            'cursor' => new stdClass,
-//        ]);
         $plines = [
             [
                 '$project' =>[
@@ -205,7 +127,7 @@ class MonController extends Controller
             ],
             [
                 '$match' => [
-                    '$create_time' => ['$gte' => '2017-04-15'],
+                    '$create_time' => ['$gte' => '2017-02-01'],
                 ],
             ],
             [
@@ -221,16 +143,7 @@ class MonController extends Controller
             'allowDiskUse' => true
         ];
         $ret = $add->aggregate('team',$plines, $option);
-//        $cursor = $manager->executeCommand('db', $command);
         var_dump($ret);die();
-//        $command = new MongoDB\Driver\Command([
-//            'aggregate' => 'collection',
-//            'pipeline' => [
-//                ['$group' => ['_id' => '$y', 'sum' => ['$sum' => '$x']]],
-//            ],
-//            'cursor' => new stdClass,
-//        ]);
-//        $cursor = $manager->executeCommand('db', $command);
     }
 
     public function actionSum(){
@@ -238,26 +151,37 @@ class MonController extends Controller
             [
                 '$project' =>[
                     '_id'=>0,
-                    'team_id'=>'$Fteam_id',
+                    'jobnumber'=>'$Fjob_number',
                     'order_num' => '$Forder_num',
                     'amount_price' => '$Famount_price',
                     'create_time' => '$Fcreate_time' ,
                 ]
             ],
+
             [
                 '$match' => [
-                    'create_time' => ['$gte' => '2017-04-16'],
+                    'create_time' => ['$gte' => '2017-03-15'],
                 ],
             ],
             [
-                '$group' => ['_id' => '$team_id', 'count' => ['$sum' =>'$order_num'], 'price' => ['$sum' =>'$amount_price']]
+                '$group' => [
+                    '_id' => '$team_id',
+                    'count' => ['$sum' =>'$order_num'],
+                    'price' => ['$sum' =>'$amount_price']
+                ]
             ],
 
             [
                 '$sort' => ['count' => -1]
+            ],
+            [
+                '$skip' => 0
+            ],
+            [
+                '$limit' => 5
             ]
         ];
-        $ret = Yii::$app->mongodb->createCommand()->aggregate('team',$plines);
+        $ret = Yii::$app->mongodb->createCommand()->aggregate('jobnumber',$plines);
         var_dump($ret);die();
 
     }

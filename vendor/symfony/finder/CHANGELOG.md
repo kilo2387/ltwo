@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+3.4.0
+-----
+
+ * deprecated `Symfony\Component\Finder\Iterator\FilterIterator`
+
+3.3.0
+-----
+
+ * added double-star matching to Glob::toRegex()
+
 3.0.0
 -----
 

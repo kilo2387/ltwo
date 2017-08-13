@@ -22,7 +22,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['index','login', 'error'],
                         'allow' => true,
                     ],
                     [
@@ -60,6 +60,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+
         return $this->render('index');
     }
 
@@ -70,6 +71,8 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+
+        $this->layout = 'test_layout';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }

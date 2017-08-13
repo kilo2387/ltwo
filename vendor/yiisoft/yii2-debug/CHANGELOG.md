@@ -1,13 +1,42 @@
 Yii Framework 2 debug extension Change Log
 ==========================================
 
-2.0.8 under development
+2.0.10 under development
+------------------------
+
+- Enh #208: All identity models get converted to arrays when saving User panel data now, not just ActiveRecord models (brandonkelly)
+- Enh #208: Identity model packaging for User panels is now done in an `identityData()` method, making it easier for subclasses to customize (brandonkelly) 
+- Enh #218: Hide the debug toolbar when an HTML page is printed (githubjeka) 
+- Bug #221: Fixed the decimal point issue in Timeline when using various locales (bashkarev)
+- Bug #223: Limit the height during the opening animation (nkovacs)
+- Enh #225: Added classes to use bootstrap styles for filter inputs in Timeline panel (johonunu)
+- Bug #226: Fixed issue in user panel when you use custom RBAC module that does not implement `\yii\rbac\ManagerInterface` (pana1990)
+- Enh #204: Switch users from the panel (sam002)
+- Bug #236: Fixed rendering AJAX errors to use `innerText` instead of `innerHTML` (samdark)
+
+
+2.0.9 February 21, 2017
 -----------------------
 
+- Bug #195: Fixed failure when user model has timestamp behavior attached (sam002)
+- Bug #199: Do not use user panel in case component isn't properly defined in the application (samdark)
+- Bug #200: Fixed error in user panel when RBAC role or permission contains non-string data (samdark)
+
+
+2.0.8 February 19, 2017
+-----------------------
+
+- Bug #82: Fixed debug crashing when there's a closure in log message (samdark)
+- Bug #176: Use module's real ID instead of hardcoded "debug" (samdark)
+- Enh #34: Added memory graph to timeline panel (bashkarev)
+- Enh #174: Added routing panel (bashkarev, samdark)
 - Enh #179: Increased request time logging accuracy and precision (samdark)
+- Enh #181: Added user panel (pana1990)
+- Enh #185: Added meta tag to prevent indexing of debug by search engines in case it's exposed (aminkt, samdark)
+- Enh #196: Added language information to config panel (cebe)
 
 
-2.0.7 under development
+2.0.7 November 24, 2016
 -----------------------
 
 - Bug #61: Fixed toolbar not to be cached by using renderDynamic (dynasource)

@@ -10,8 +10,18 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
-    'modules' => [],
+    'bootstrap' => ['log','debug'],
+    'modules' => [
+        'debug'=>[
+            'class' => 'yii\debug\Module',
+        ],
+        'v1' => [
+            'class' => 'api\modules\v1\Module'
+        ],
+        'v2' => [
+            'class' => 'api\modules\v2\Module'
+        ]
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -38,13 +48,13 @@ return [
             'errorAction' => 'site/error',
         ],
 
-        //开启路由
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
+//        //开启路由
+//        'urlManager' => [
+//            'enablePrettyUrl' => true,
+//            'showScriptName' => true,
+//            'rules' => [
+//            ],
+//        ],
 
     ],
     'params' => $params,

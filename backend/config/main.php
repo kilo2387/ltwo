@@ -48,13 +48,13 @@ return [
             'errorAction' => 'site/error',
         ],
 
-//        //开启路由
-//        'urlManager' => [
-//            'enablePrettyUrl' => true,
-//            'showScriptName' => true,
-//            'rules' => [
-//            ],
-//        ],
+        //开启路由
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => true,
+            'rules' => [
+            ],
+        ],
 
     ],
     'params' => $params,
